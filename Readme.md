@@ -3,4 +3,4 @@
 
 
 
-This project was build in a school holiday week [@lab360](lab360.ch)
+This project was build in a school holiday week [@lab360](https://lab360.ch)
