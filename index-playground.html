@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game 1</title>
+    <style>
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            font-size: 96px;
+            background: blue;
+            margin: 0 0 200px 0;
+            padding: 20px;
+            border: 10px solid green;
+            transform: translateX(0) rotate(30deg);
+            transform-origin: 0 100%;
+            box-shadow: 10px 5px 5px black;
+            width: 400px;
+            border-radius: 20px;
+            transition: transform 1000ms ease-in-out;
+        }
+        h3.active {
+            transform: translateX(100%) rotate(0deg);
+        }
+    </style>
+    <script>
+        setInterval(() => {
+            const ourH3Element = document.querySelector("h3");
+            if(ourH3Element.classList.contains("active")) {
+                ourH3Element.classList.remove("active")
+            } else {
+                ourH3Element.classList.add("active")
+            }
+        }, 1000);
+    </script>
+</head>
+<body>
+    <h1>Hallo Welt</h1>
+    <h2>Hallo Welt</h2>
+    <h3 class="active">Hallo Welt</h3>
+    <h4>Hallo Welt</h4>
+    <h5>Hallo Welt</h5>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href="https://www.blick.ch">Reiciendis</a> dolore nemo facere suscipit esse aperiam quasi aspernatur ipsa? Nemo voluptatem impedit hic quisquam eveniet animi error distinctio voluptatibus quaerat libero?</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <img src="https://tmssl.akamaized.net/images/foto/big/mario-mandzukic-juventus-turin-1562734148-23477.jpg">
+    <img src="/imgs/bild1.jpg" width="150px">
+</body>
+</html>
