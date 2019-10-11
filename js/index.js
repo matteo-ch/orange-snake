@@ -9,21 +9,21 @@ let imageLoaded = false;
 img.onload = function () {
     imageLoaded = true;
 };
-img.src = "/imgs/apple.jpg";
+img.src = "./imgs/apple.jpg";
 
 const img1 = new Image;
 let image1Loaded = false;
 img1.onload = function () {
     image1Loaded = true;
 };
-img1.src = "/imgs/Stop.jpg";
+img1.src = "./imgs/Stop.jpg";
 
 const sprite = new Image()
 let spriteLoaded = false;
 sprite.onload = function() {
     spriteLoaded = true;
 }
-sprite.src = "/imgs/snake-sprite.png";
+sprite.src = "./imgs/snake-sprite.png";
 
 
 const unitSize = 40;
